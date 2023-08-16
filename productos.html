@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Productos</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html"><img width="200" src="images/logo.png" alt="banner"></a>
+        </div>
+        
+        <div id="div-menu" class="contenedor-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+              </svg>
+        </div>
+
+        <nav class="header__navbar">
+            <ul id="ul-menu">
+                <li><a class="navbar__link" href="productos.html">Productos</a></li>
+                <li><a class="navbar__link" href="contacto.html">Contacto</a></li>
+                <li><a class="navbar__link" href="carrito.html">Carrito de compra</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contenedor-pagproductos">
+        <h1>Productos</h1>
+        <main>
+            <div class="barra-lateral">
+                <div class="barra-lateral__procesador">
+                    <h2>Procesador</h2>
+                    <p>Amd</p>
+                    <ul class="barra-lateral__lista amd">
+                        <li><a href="#">Ryzen 3</a></li>
+                        <li><a href="#">Ryzen 5</a></li>
+                        <li><a href="#">Ryzen 7</a></li>
+                    </ul>  
+                    
+                    <p>Intel</p>
+                    <ul class="barra-lateral__lista intel">
+                        <li><a href="#">Core I3</a></li>
+                        <li><a href="#">Core I5</a></li>
+                        <li><a href="#">Core I7</a></li>
+                    </ul>
+                </div>
+                <div class="barra-lateral__gpu">
+                    <h2>Placas de video</h2>
+                    <p>Amd</p>
+                    <ul class="barra-lateral__lista">
+                        <li><a href="#">Rx 660</a></li>
+                        <li><a href="#">Rx 6800</a></li>
+                    </ul>  
+                    
+                    <p>Nvidia</p>
+                    <ul class="barra-lateral__lista">
+                        <li><a href="#">RTX 3070ti</a></li>
+                        <li><a href="#">RTX 3080</a></li>
+                        <li><a href="#">RTX 3090</a></li>
+                    </ul>
+                </div>
+            </div> <!--.barra lateral-->
+            <div class="area-productos">
+                <div class="product-box">
+                    <div>
+                        <img src="images/ryzen3.jpg" alt="ryzen 3">
+                    </div>
+                    <div class="product-price">
+                        <p>$50.000<span>Procesador AMD Ryzen 3 3200G
+                        </span></p>
+                        <a class="link__compra" href="carrito.html">Agregar</a>
+                    </div>
+                </div> <!--.product-box-->
+                <div class="product-box">
+                    <div>
+                        <img src="images/ryzen5.jpg" alt="ryzen 5">
+                    </div>
+                    <div class="product-price">
+                        <p>$75.000<span>Procesador AMD Ryzen 5 460G
+                        </span></p>
+                        <a class="link__compra" href="carrito.html">Agregar</a>
+                    </div>
+                </div> <!--.product-box-->
+                <div class="product-box">
+                    <div>
+                        <img src="images/ryzen7.jpg" alt="ryzen 7">
+                    </div>
+                    <div class="product-price">
+                        <p>$50.000<span>Procesador AMD Ryzen 7 5700G
+                        </span></p>
+                        <a class="link__compra" href="carrito.html">Agregar</a>
+                    </div>
+                </div> <!--.product-box-->
+                <!--end 1row-->
+                
+                <div class="product-box">
+                    <div>
+                        <img src="images/6600.jpg" alt="rx 6600">
+                    </div>
+                    <div class="product-price">
+                        <p>$100.000<span>AMD Radeon RX 6600</span></p>
+                        <a class="link__compra" href="carrito.html">Agregar</a>
+                    </div>
+                </div> <!--.product-box-->
+                <div class="product-box">
+                    <div>
+                        <img src="images/6800.jpg" alt="rx 6800">
+                    </div>
+                    <div class="product-price">
+                        <p>$120.000<span>AMD Radeon RX 6800</span></p>
+                        <a class="link__compra" href="carrito.html">Agregar</a>
+                    </div>
+                </div> <!--.product-box-->
+                <div class="product-box">
+                    <div>
+                        <img src="images/3070ti.jpg" alt="rtx 3070ti">
+                    </div>
+                    <div class="product-price">
+                        <p>$100.000<span>NVIDIA RTX 3070ti
+                        </span></p>
+                        <a class="link__compra" href="carrito.html">Agregar</a>
+                    </div>
+                </div> <!--.product-box-->
+                <!--end 2row-->
+                <div class="product-box">
+                    <div>
+                        <img src="images/3080.jpg" alt="NVIDIA RTX 3080">
+                    </div>
+                    <div class="product-price">
+                        <p>$120.000<span>NVIDIA RTX 3080
+                        </span></p>
+                        <a class="link__compra" href="carrito.html">Agregar</a>
+                    </div>
+                </div> <!--.product-box-->
+                <div class="product-box">
+                    <div>
+                        <img src="images/3090.jpg" alt="RTX 3090">
+                    </div>
+                    <div class="product-price">
+                        <p>$150.000<span>NVIDIA RTX 3090
+                        </span></p>
+                        <a class="link__compra" href="carrito.html">Agregar</a>
+                    </div>
+                </div> <!--.product-box-->
+                <!--end 3row-->
+            </div> <!--.area-productos-->
+        </main>
+    </section>
+
+
+    <footer class="footer">
+        <div class="redes">
+            <div class="twitter">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z" />
+                    </svg>
+                </a>
+            </div> <!--.twitter-->
+            <div class="facebook">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+                </a>
+            </div> <!--.facebook-->
+            <div class="instagram">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M16.5 7.5l0 .01" />
+                    </svg>
+                </a>
+            </div> <!--.instagram-->
+        </div> <!--.redes-->
+        <div class="links">
+            <ul>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Términos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <p>Copyright 2023 - Qwerty computación</p>
+        </div> <!--.links-->
+    </footer>
+
+    <script src="js/menudesplegable.js"></script> 
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Carrito</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html"><img width="200" src="images/logo.png" alt="banner"></a>
+        </div>
+        
+        <div id="div-menu" class="contenedor-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+              </svg>
+        </div>
+
+        <nav class="header__navbar">
+            <ul id="ul-menu">
+                <li><a class="navbar__link" href="productos.html">Productos</a></li>
+                <li><a class="navbar__link" href="contacto.html">Contacto</a></li>
+                <li><a class="navbar__link" href="carrito.html">Carrito de compra</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="div-imagen">
+
+    </div>
+    
+    <div class="contenedor-carrito">
+        <section class="carrito-compra">
+            <div class="titulo-logo">
+                <div>
+                    <h2>Agrega productos al carrito</h2>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M17 17h-11v-14h-2" />
+                        <path d="M6 5l14 1l-1 7h-13" />
+                      </svg>
+                </div>
+            </div> <!--titulo-logo-->
+            <form class="carrito__formulario">
+                <label class="label__carrito" for="gama">Componente</label>
+                <input class="carrito__input" type="text" name="gama" placeholder="Componente" id="gama" required>
+
+                <label class="label__carrito" for="perifericos">Perifericos</label>
+                <input class="carrito__input" type="text" name="perifericos" placeholder="Perifericos" id="perifericos" required>
+            
+                <div class="botones">
+                    <button type="button" class="btn-carrito" id="btn-agregar1">Agregar</button>
+                    <button type="button" class="btn-carrito" id="btn-agregar3">Agregar x3</button>
+                    <button type="button" class="btn-carrito" id="btn-vaciar">Vaciar</button>
+                </div>
+            </form>
+        </section>
+        
+        <div class="tabla-pc">
+            <div class="titulo-logo">
+                <div>
+                    <h1>Productos Agregados</h1>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-keyboard-show" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M2 3m0 2a2 2 0 0 1 2 -2h16a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-16a2 2 0 0 1 -2 -2z" />
+                        <path d="M6 7l0 .01" />
+                        <path d="M10 7l0 .01" />
+                        <path d="M14 7l0 .01" />
+                        <path d="M18 7l0 .01" />
+                        <path d="M6 11l0 .01" />
+                        <path d="M18 11l0 .01" />
+                        <path d="M10 11l4 0" />
+                        <path d="M10 19l2 2l2 -2" />
+                      </svg>
+                </div>
+            </div> <!--titulo-logo-->
+            <table id="tablaVender">
+                <thead class="thead">
+                <th>Componente</th>
+                <th>Perifericos</th>
+                </thead>
+            </table>
+        </div>
+    
+        <div class="aviso">
+            <div class="aviso__simbolo">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-circle" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                    <path d="M12 8v4" />
+                    <path d="M12 16h.01" />
+                  </svg>
+            </div>
+            <p>Ante cualquier inconveniente con la compra por favor ir a nuestra sección de <a href="contacto.html">contactos</a> y comunicarse con nuestro atención al cliente. Muchas gracias</p>
+        </div>
+    </div>  <!--.contenedor-carrito--> 
+
+    <footer class="footer carro">
+        <div class="redes">
+            <div class="twitter">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z" />
+                    </svg>
+                </a>
+            </div> <!--.twitter-->
+            <div class="facebook">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+                </a>
+            </div> <!--.facebook-->
+            <div class="instagram">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M16.5 7.5l0 .01" />
+                    </svg>
+                </a>
+            </div> <!--.instagram-->
+        </div> <!--.redes-->
+        <div class="links">
+            <ul>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Términos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <p>Copyright 2023 - Qwerty computación</p>
+        <div/> <!--.links-->
+    </footer>
+    <script src="js/menudesplegable.js"></script>
+    <script src="js/tabla.js"></script>
+</body>
+</html>
